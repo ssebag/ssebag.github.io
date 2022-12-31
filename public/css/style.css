@@ -1,0 +1,224 @@
+body{
+    background:url("../image/bkg.jpg");
+     background-repeat:no-repeat;
+    background-size:cover;
+
+ }
+ .container{
+    padding-bottom: 2rem;
+ }
+ .main-row{
+   
+    opacity:90%;
+    display:grid;
+    grid-template-columns: 0.2fr 2fr;
+    margin-top:-2%;
+ }
+ .main-row ul{
+    background-image:url("../image/bkg2.gif");
+    border-radius: 2%;
+    padding: 10px;
+ }
+ .buttonCv
+{
+  background-image:url("../image/bkg2.gif");
+    color: aliceblue;
+    border: 5px solid rgb(15, 15, 92);
+}
+.buttonCv:hover
+{
+    font-size: large;   
+    color: aliceblue;
+    border: 8px solid rgb(15, 15, 92);
+}
+ .port-image {
+    width:7.4rem;
+  }
+
+ .port-image img{
+  
+    width:7.4rem;
+    height: 12rem;
+    
+    
+ }
+
+ .start{
+   display:grid;
+   grid-template-columns:2fr 0.5fr;
+ }
+ .begnning {
+    justify-self: start;
+ }
+ .begnning p ,.about_me span , .interests span , .skills span ,.work span ,.contact span ,.knowledge span{
+    text-align: start;
+    font-size: 4rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+ }
+ .begnning p .span1, .about_me span:hover,.interests span:hover , .skills span:hover ,.work span:hover ,.contact span:hover ,.knowledge span:hover{
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 1px rgb(201, 195, 195), 0 10px 10px #251a8d, 0 -18px 40px rgb(73, 101, 163), -18px 2px 3px rgba(206,89,55,0.01);
+ }
+ .begnning p .span1:hover,.begnning p .span2:hover{
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #5900ff, 0 -18px 40px rgb(0, 68, 255), -18px 2px 3px rgba(206,89,55,0.01);
+ }
+ .begnning p .span2{
+    text-shadow: 7px 9px 7px rgba(19,17,72,0.8);
+ }
+
+ .myCV{
+    justify-self: end;
+ }
+.main-nav{
+  justify-content: start;
+  align-content: flex-end;
+  
+}
+.nav-item{
+    padding: 5px 5px;
+}
+.main-nav ul li a{
+    color:antiquewhite;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+} 
+.main-nav ul li a:hover{
+    color: antiquewhite;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    
+} 
+.about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge {
+    margin-top: 3rem;
+    background:rgb(17, 6, 37);
+    padding:0.8rem;
+        
+}
+.about_me span, .interests span, .skills span ,.work span ,.contact span ,.knowledge span{
+    color: rgb(137, 105, 211);
+}
+
+.about_me p , .interests p , .begnning{
+    margin-top:0.5rem;
+    text-align: start;
+    font-size: 2.5rem;
+    word-spacing: 2px;
+    color: antiquewhite;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.knowledge-div{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+}
+.knowledge-div span, .contact-div p{
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.progress{
+    align-self: center;
+    height: 20px;
+    background: #FCE2DB;
+    border-radius: 20px;
+    border: 1px solid grey;
+    box-shadow: 0 2px 2px  #7F5283;
+}
+.progress-bar{
+   
+    border-radius: 20px;
+    border: 1px solid #7F5283;
+    animation: animate-positive 10s;
+}
+@-webkit-keyframes animate-positive{
+    0%{
+        width:0;
+    }
+}
+@keyframes animate-positive{
+    0%{
+        width:0;
+    }
+}
+.work-div{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+.work-div img{
+    border: rgb(137, 105, 211) 1px solid;
+    border-radius: 2%;
+    width:800px;
+    height: 400px;
+}
+.work-des{
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 4fr 2fr;
+    color:aliceblue;
+    justify-content: center;
+}
+.work-des h2, p{
+   
+    text-align: start;
+    font-weight:bolder;
+}
+
+@media (max-width: 1000px) {
+    .work-des{
+        display: none;
+    }
+    .work-div img{
+        width:200%;
+        height:100%;
+    }
+}
+
+.work-icon{
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   position: relative;
+}
+.work-icon a{
+    color:white;
+}
+.github {
+    justify-self:center;
+}
+.diamond{
+    justify-self: end;
+}
+#alert{
+   display: none; 
+   position: absolute;
+   top:-4rem;
+   left: 4rem;
+}
+#preloader{
+    background:black url("../image/spinner.gif") no-repeat center center;
+    background-size: 15%;
+    height: 110vh;
+    width: 100%;
+    position:fixed ;
+    z-index: 100;
+
+}
+#alert1{
+  display: none;
+    position: absolute;
+    top:-4rem;
+    left: 16rem;
+ }
+ #alert2{
+   display:none;
+    position: absolute;
+    top:-4rem;
+    left: 15rem;
+ }
+.work-icon a:hover{
+    
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 1px rgb(201, 195, 195), 0 10px 10px #251a8d, 0 -18px 40px rgb(73, 101, 163), -18px 2px 3px rgba(206,89,55,0.01);
+}
+
+
+
