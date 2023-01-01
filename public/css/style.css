@@ -140,21 +140,29 @@ body{
         width:0;
     }
 }
-.work-div{
+.work-div1{
     margin: 1rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
+    
 }
-.work-div img{
+.work-div2{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+.work-div1 img, .work-div2 img{
     border: rgb(137, 105, 211) 1px solid;
     border-radius: 2%;
-    width:800px;
-    height: 400px;
+    height: 25rem;
+ 
 }
+
 .work-des{
     display: grid;
-    grid-template-rows: 0.5fr 2fr 4fr 2fr;
+    grid-template-rows: 0.5fr 1fr 4fr 2fr;
     color:aliceblue;
     justify-content: center;
 }
@@ -163,24 +171,41 @@ body{
     text-align: start;
     font-weight:bolder;
 }
-
 @media (max-width: 1000px) {
     .work-des{
-        display: none;
+     display: none;
     }
-    .work-div img{
-        width:200%;
-        height:100%;
-    }
+   .work-div1 , .work-div2{
+
+     display: grid;
+     grid-template-columns: 0.94fr;
+   }
+        
 }
 
-.work-icon{
+.work-icon1{
+    display:grid;
+    grid-template-columns: 1fr ;
+    position: relative;
+
+ }
+.work-icon2{
    display:grid;
    grid-template-columns: 1fr 1fr 1fr;
    position: relative;
 }
-.work-icon a{
+.work-icon2 a , .work-icon1 a{
     color:white;
+}
+@media (max-width: 1200px) {
+    .work-des{
+     font-size: 0.5rem;
+    }
+    .work-icon1, .work-icon2{
+        display: none;
+    }
+ 
+        
 }
 .github {
     justify-self:center;
@@ -207,13 +232,13 @@ body{
   display: none;
     position: absolute;
     top:-4rem;
-    left: 16rem;
+    left: 3rem;
  }
  #alert2{
    display:none;
     position: absolute;
     top:-4rem;
-    left: 15rem;
+    left: 12rem;
  }
 .work-icon a:hover{
     
