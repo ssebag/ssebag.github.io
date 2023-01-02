@@ -205,7 +205,7 @@ body{
 }
 #preloader{
     background: url("../image/spinner.webp") no-repeat center center;
-    background-size: 15%;
+    background-size: 35%;
     height: 110vh;
     width: 100%;
     position:fixed ;
