@@ -1,9 +1,30 @@
 @media (max-width: 550px) {
     .start p , .about_me span , .about_me p ,
-    .interests span , .interests p, .knowledge span , .knowledge p , .work span , .contact span 
-    , .contact p{
+    .interests span , .interests p, .knowledge span  , .work span , .contact span 
+    {
     font-size: 1rem;
     }
+    .knowledge-div span{
+        font-size: 0.8rem;
+    }
+   
+    .contact p{
+        font-size: 0.6rem;
+        
+        }
+     
+        .email{
+            height:20px;
+            width: 20px;
+        }
+        .facebook{
+            height:20px;
+            width: 23px;
+        }
+        .phone{
+            height: 40px;
+            width: 25px;
+        }
     .myCV a {
         font-size: 0.5rem;
     }
@@ -32,13 +53,18 @@
 
 @media(min-width:550px) and (max-width:850px){
     .start p , .about_me span , .about_me p ,
-    .interests span , .interests p, .knowledge span , .knowledge p , .work span , .contact span 
+    .interests span , .interests p, .knowledge span  , .work span , .contact span 
     , .contact p {
     font-size: 1.3rem;
     }
     .myCV a {
         font-size: 1rem;
     }
+    .knowledge-div span{
+        font-size: 1rem;
+      
+    }
+  
    
      .port-image img{
       
@@ -59,6 +85,18 @@
             }
             .work-des p{
                 font-size: 0.6rem;
+                }
+                .phone{
+                    height: 50px;
+                    width: 40px;
+                }
+                .email{
+                    height:25px;
+                    width: 30px;
+                }
+                .facebook{
+                    height:30px;
+                    width: 30px;
                 }
     } 
  
@@ -90,6 +128,18 @@
                              top:-4rem;
                              left: 5rem;
                           }
+                          .phone{
+                            height: 50px;
+                            width: 40px;
+                        }
+                        .email{
+                            height:25px;
+                            width: 30px;
+                        }
+                        .facebook{
+                            height:30px;
+                            width: 30px;
+                        }
         } 
 
     

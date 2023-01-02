@@ -23,7 +23,7 @@ body{
 {
   background-image:url("../image/bkg2.gif");
     color: aliceblue;
-    border: 5px solid rgb(15, 15, 92);
+    border: 5px solid rgb(30, 11, 65);
 }
 .buttonCv:hover
 {
@@ -42,6 +42,16 @@ body{
     
     
  }
+ .knowledge-div{
+    display:grid;
+    grid-template-columns:0.1fr 1fr;
+    gap:10px
+}
+.knowledge-div span{
+ 
+    justify-self:center;
+}
+
 
  .start{
    display:grid;
@@ -211,6 +221,18 @@ body{
     position:fixed ;
     z-index: 100;
 
+}
+.phone{
+    height: 50px;
+    width: 40px;
+}
+.email{
+    height:25px;
+    width: 30px;
+}
+.facebook{
+    height:30px;
+    width: 30px;
 }
 #alert1{
   display: none;
