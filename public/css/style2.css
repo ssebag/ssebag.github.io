@@ -1,0 +1,95 @@
+@media (max-width: 550px) {
+    .start p , .about_me span , .about_me p ,
+    .interests span , .interests p, .knowledge span , .knowledge p , .work span , .contact span 
+    , .contact p{
+    font-size: 1rem;
+    }
+    .myCV a {
+        font-size: 0.5rem;
+    }
+    .work-des{
+     display: none;
+    }
+    
+     .port-image img{
+      
+        width:3.5rem;
+        height:6rem;
+        
+        
+     }
+    
+   .work-div1 , .work-div2{
+
+     display: grid;
+     grid-template-columns: 0.94fr;
+
+   }
+   .work-div1 img, .work-div2 img{
+    height: 8rem;
+ }
+}
+
+@media(min-width:550px) and (max-width:850px){
+    .start p , .about_me span , .about_me p ,
+    .interests span , .interests p, .knowledge span , .knowledge p , .work span , .contact span 
+    , .contact p {
+    font-size: 1.3rem;
+    }
+    .myCV a {
+        font-size: 1rem;
+    }
+   
+     .port-image img{
+      
+        width:5rem;
+        height:8rem;     
+     }
+     .work-des{
+        display: grid;
+        grid-template-rows: 0.15fr  1fr ;
+     }
+     .work-icon1 , .work-icon2 , .work-des i{
+       display: none;
+     }
+     .work-div1 img, .work-div2 img{
+        height: 16rem;    }
+        .work-des h2 {
+            font-size: 0.8rem;
+            }
+            .work-des p{
+                font-size: 0.6rem;
+                }
+    } 
+ 
+    @media(min-width:850px) and (max-width:900px){
+        .work-des {
+            display: grid;
+            grid-template-rows:0.01fr 0.2fr 1fr 1fr;
+        }
+           .work-div1 img, .work-div2 img{
+            height: 20rem;    }
+            .work-des h2 {
+                font-size: 1rem;
+                }
+                .work-des p , .work-des i{
+                    font-size: 0.8rem;
+                    }
+                    .work-des i{
+                        font-size: 0.6rem;
+                        }
+                        .github i{
+                            font-size:1.8rem
+                        }
+                        .diamond i{
+                            font-size:1.4rem
+                        }
+                        #alert2{
+                            display:none;
+                             position: absolute;
+                             top:-4rem;
+                             left: 5rem;
+                          }
+        } 
+
+    

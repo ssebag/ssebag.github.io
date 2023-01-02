@@ -171,17 +171,7 @@ body{
     text-align: start;
     font-weight:bolder;
 }
-@media (max-width: 1000px) {
-    .work-des{
-     display: none;
-    }
-   .work-div1 , .work-div2{
 
-     display: grid;
-     grid-template-columns: 0.94fr;
-   }
-        
-}
 
 .work-icon1{
     display:grid;
@@ -197,21 +187,15 @@ body{
 .work-icon2 a , .work-icon1 a{
     color:white;
 }
-@media (max-width: 1200px) {
-    .work-des{
-     font-size: 0.5rem;
-    }
-    .work-icon1, .work-icon2{
-        display: none;
-    }
- 
-        
-}
+
 .github {
     justify-self:center;
 }
 .diamond{
     justify-self: end;
+}
+.diamond i{
+    font-size:2.5rem
 }
 #alert{
    display: none; 
@@ -220,7 +204,7 @@ body{
    left: 4rem;
 }
 #preloader{
-    background:black url("../image/spinner.gif") no-repeat center center;
+    background: url("../image/spinner.gif") no-repeat center center;
     background-size: 15%;
     height: 110vh;
     width: 100%;
@@ -244,6 +228,5 @@ body{
     
     text-shadow: 0 -1px 4px #FFF, 0 -2px 1px rgb(201, 195, 195), 0 10px 10px #251a8d, 0 -18px 40px rgb(73, 101, 163), -18px 2px 3px rgba(206,89,55,0.01);
 }
-
 
 
