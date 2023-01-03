@@ -7,7 +7,7 @@ if(isset($_POST['btn-send']))
    $subject=$_POST['subject'];
    $to="s.sseba96@gmail.com";
    mail($to , $subject , $message , $email);
-   header("Location: index.php");
+   header("Location: portfolio.html");
 }
 
 ?>
