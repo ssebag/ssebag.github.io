@@ -60,13 +60,15 @@ body{
  .begnning {
     justify-self: start;
  }
- .begnning p ,.about_me span , .interests span , .skills span ,.work span ,.contact span ,.knowledge span{
+ .begnning p ,.about_me span , .interests span , .skills span ,.work span ,
+ .contact span ,.knowledge span , .email-sending span{
     text-align: start;
     font-size: 4rem;
     font-family:'Times New Roman', Times, serif;
     font-weight: 800;
  }
- .begnning p .span1, .about_me span:hover,.interests span:hover , .skills span:hover ,.work span:hover ,.contact span:hover ,.knowledge span:hover{
+ .begnning p .span1, .about_me span:hover,.interests span:hover , .skills span:hover ,
+ .work span:hover ,.contact span:hover ,.knowledge span:hover, .email-sending span:hover{
     text-shadow: 0 -1px 4px #FFF, 0 -2px 1px rgb(201, 195, 195), 0 10px 10px #251a8d, 0 -18px 40px rgb(73, 101, 163), -18px 2px 3px rgba(206,89,55,0.01);
  }
  .begnning p .span1:hover,.begnning p .span2:hover{
@@ -99,13 +101,13 @@ body{
     font-weight: bolder;
     
 } 
-.about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge {
+.about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge ,.email-sending{
     margin-top: 3rem;
     background:rgb(17, 6, 37);
     padding:0.8rem;
         
 }
-.about_me span, .interests span, .skills span ,.work span ,.contact span ,.knowledge span{
+.about_me span, .interests span, .skills span ,.work span ,.contact span ,.knowledge span ,.email-sending span{
     color: rgb(137, 105, 211);
 }
 
@@ -250,5 +252,54 @@ body{
     
     text-shadow: 0 -1px 4px #FFF, 0 -2px 1px rgb(201, 195, 195), 0 10px 10px #251a8d, 0 -18px 40px rgb(73, 101, 163), -18px 2px 3px rgba(206,89,55,0.01);
 }
+.grid-name{
+    grid-area: name;
+    background: rgb(190, 186, 186);
+}
+.grid-email{
+    grid-area: email;
+    background: rgb(190, 186, 186);
+}
+.grid-subject{
+      background: rgb(190, 186, 186);
+}
+.grid-message{
+      background: rgb(190, 186, 186);
+}
+.grid-send{
+    background-color: #231838;
+    width:10rem;
+    justify-self: center;
+  
+    
+}
+.email-form1 {
+    display:grid;
+    grid-template-rows:auto ;
+    grid-template-areas: "name email";
+    gap: 10px;
+}
+.email-form3{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.email-form{
+    display:grid;
+    grid-template-rows:1fr 1fr 2fr 1fr;
+    gap: 10px;
+}
 
 
+
+.email-form input , .email-form textarea{
+    border-radius: 4px;
+    padding: 8px;
+
+}
+
+.email-form input:focus{
+    border-bottom: 3px solid #696497;
+    
+}

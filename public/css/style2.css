@@ -1,6 +1,6 @@
 @media (max-width: 550px) {
     .start p , .about_me span , .about_me p ,
-    .interests span , .interests p, .knowledge span  , .work span , .contact span 
+    .interests span , .interests p, .knowledge span  , .work span , .contact span ,.email-form span
     {
     font-size: 1rem;
     }
@@ -53,7 +53,7 @@
 
 @media(min-width:550px) and (max-width:850px){
     .start p , .about_me span , .about_me p ,
-    .interests span , .interests p, .knowledge span  , .work span , .contact span 
+    .interests span , .interests p, .knowledge span  , .work span , .contact span ,.email-form span
     , .contact p {
     font-size: 1.3rem;
     }

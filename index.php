@@ -286,11 +286,12 @@
       <p><span class="iconify facebook mx-1" data-icon="logos:facebook"></span> Facebook : www.facebook.com/sseba.gh</p>
      </div>
     </div>
+ 
 
     <div class="email-sending">
         <span>Contact Me</span>
            <div class="email-form3">
-           <form method="post" action="portfolio.php" method="POST"  class="email-form" >
+           <form  action="index.php" method="POST"  class="email-form" >
                <div class="email-form1">
                    <input class="grid-name"  type="text" name="name" placeholder="Your Name" require>
                     <input  class="grid-email" type="email" name="email" placeholder="Email Address" require> 
@@ -371,3 +372,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
     </html>
+
+    <?php
+            if(isset($_POST['btn-send']))
+            {
+            $name=$_POST['name'];
+            $email=$_POST['email'];
+            $message=$_POST['message'];
+            $subject=$_POST['subject'];
+            $to="s.sseba96@gmail.com";
+            mail($to , $subject , $message , $email);
+            header("Location: index.php");
+            }
+
+?>
