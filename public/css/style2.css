@@ -28,6 +28,10 @@
     .myCV a {
         font-size: 0.5rem;
     }
+    .myCV a:hover {
+        font-size: 0.6rem;
+        margin: 0;
+    }
     .work-des{
      display: none;
     }
@@ -58,7 +62,12 @@
     font-size: 1.3rem;
     }
     .myCV a {
-        font-size: 1rem;
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    .myCV a:hover {
+        font-size: 0.8rem;
+        margin: 0;
     }
     .knowledge-div span{
         font-size: 1rem;
@@ -98,6 +107,8 @@
                     height:30px;
                     width: 30px;
                 }
+              
+          
     } 
  
     @media(min-width:850px) and (max-width:900px){
@@ -139,6 +150,13 @@
                         .facebook{
                             height:30px;
                             width: 30px;
+                        }
+                        .myCV a {
+                            font-size: 0.8rem;
+                          }
+                        .myCV a:hover {
+                            font-size: 1rem;
+                            margin: 0;
                         }
         } 
 

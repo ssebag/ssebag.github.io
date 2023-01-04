@@ -1,7 +1,8 @@
 body{
-    background:url("../image/bkg.jpg");
-     background-repeat:no-repeat;
-    background-size:cover;
+    /* background:url("https://gifimage.net/wp-content/uploads/2017/06/stars-gif-4.gif"); */
+/* background: url("https://i.pinimg.com/originals/a7/7f/62/a77f6215e2f77eb5a6e4e77d7298809d.gif"); */
+    background: url("../image/background.webp") 0 0 repeat;
+  
 
  }
  .container{
@@ -23,7 +24,7 @@ body{
 {
   background-image:url("../image/bkg2.gif");
     color: aliceblue;
-    border: 5px solid rgb(30, 11, 65);
+    border: 5px solid rgb(15, 15, 92);
 }
 .buttonCv:hover
 {
@@ -33,6 +34,7 @@ body{
 }
  .port-image {
     width:7.4rem;
+    z-index:100
   }
 
  .port-image img{
@@ -80,14 +82,18 @@ body{
 
  .myCV{
     justify-self: end;
+   
  }
 .main-nav{
   justify-content: start;
   align-content: flex-end;
   
 }
+nav{
+    margin-left: -2rem;
+}
 .nav-item{
-    padding: 5px 5px;
+    padding: 5px 10px;
 }
 .main-nav ul li a{
     color:antiquewhite;
@@ -103,12 +109,19 @@ body{
 } 
 .about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge ,.email-sending{
     margin-top: 3rem;
-    background:rgb(17, 6, 37);
-    padding:0.8rem;
+    
+     background:#091538; 
+    /*background: url("https://thumbs.gfycat.com/SilentIdleAmurstarfish-size_restricted.gif");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:1rem 5rem;
         
 }
+.contact{
+    margin-bottom: 3rem;
+}
 .about_me span, .interests span, .skills span ,.work span ,.contact span ,.knowledge span ,.email-sending span{
-    color: rgb(137, 105, 211);
+    color: grey;
 }
 
 .about_me p , .interests p , .begnning{
@@ -131,15 +144,15 @@ body{
 .progress{
     align-self: center;
     height: 20px;
-    background: #FCE2DB;
+    background: #e7e9f3;
     border-radius: 20px;
     border: 1px solid grey;
-    box-shadow: 0 2px 2px  #7F5283;
+    box-shadow: 0 2px 2px  #4E61BA;
 }
 .progress-bar{
    
     border-radius: 20px;
-    border: 1px solid #7F5283;
+    border: 1px solid #4E61BA;
     animation: animate-positive 10s;
 }
 @-webkit-keyframes animate-positive{
