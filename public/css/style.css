@@ -23,13 +23,13 @@ body{
  .buttonCv
 {
   background-image:url("../image/bkg2.gif");
-    color: aliceblue;
+    color:white;
     border: 5px solid rgb(15, 15, 92);
 }
 .buttonCv:hover
 {
     font-size: large;   
-    color: aliceblue;
+    color: white;
     border: 8px solid rgb(15, 15, 92);
 }
  .port-image {
@@ -96,13 +96,13 @@ nav{
     padding: 5px 10px;
 }
 .main-nav ul li a{
-    color:antiquewhite;
+    color:white;
     font-size: 1.5rem;
     font-weight: bolder;
     margin-left: 0.5rem;
 } 
 .main-nav ul li a:hover{
-    color: antiquewhite;
+    color: white;
     font-size: 1.7rem;
     font-weight: bolder;
     
@@ -129,7 +129,7 @@ nav{
     text-align: start;
     font-size: 2.5rem;
     word-spacing: 2px;
-    color: antiquewhite;
+    color: white;
     font-family:'Times New Roman', Times, serif;
     
 }
@@ -139,7 +139,7 @@ nav{
 }
 .knowledge-div span, .contact-div p{
     font-size: 1.5rem;
-    color: aliceblue;
+    color: white;
 }
 .progress{
     align-self: center;
@@ -188,7 +188,7 @@ nav{
 .work-des{
     display: grid;
     grid-template-rows: 0.5fr 1fr 4fr 2fr;
-    color:aliceblue;
+    color:white;
     justify-content: center;
 }
 .work-des h2, p{

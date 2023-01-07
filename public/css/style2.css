@@ -1,4 +1,9 @@
 @media (max-width: 550px) {
+.about_me, .contact ,.interests ,.work, .knowledge{
+    margin-left: -5rem;
+    margin-right: -4rem;
+}
+
     .start p , .about_me span , .about_me p ,
     .interests span , .interests p, .knowledge span  , .work span , .contact span ,.email-form span
     {
