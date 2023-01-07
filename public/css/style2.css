@@ -1,6 +1,5 @@
 @media (max-width: 550px) {
-  
-.about_me , .interests , .knowledge ,.contact{
+.about_me, .contact ,.interests ,.work, .knowledge{
     margin-left: -5rem;
     margin-right: -1rem;
     padding-right: 1px;
@@ -171,6 +170,6 @@
                             font-size: 1rem;
                             margin: 0;
                         }
-        } 
+                    } 
 
     
