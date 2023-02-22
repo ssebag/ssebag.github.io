@@ -222,7 +222,7 @@ nav{
 .diamond i{
     font-size:2.5rem
 }
-#alert{
+#alertForRes{
    display: none; 
    position: absolute;
    top:-4rem;
@@ -249,17 +249,29 @@ nav{
     height:30px;
     width: 30px;
 }
-#alert1{
+#alertForClGit{
   display: none;
     position: absolute;
     top:-4rem;
     left: 3rem;
  }
- #alert2{
+ #alertForClWeb{
    display:none;
     position: absolute;
     top:-4rem;
     left: 12rem;
+ }
+ #alertForDDWeb{
+    display:none;
+    position: absolute;
+    top:-4rem;
+    left: 12rem;
+ }
+ #alertForDDGit{
+    display:none;
+    position: absolute;
+    top:-4rem;
+    left: 0rem;
  }
 .work-icon a:hover{
     

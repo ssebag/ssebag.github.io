@@ -2,17 +2,41 @@ var loader=document.getElementById("preloader");
 window.addEventListener("load",function(){
     loader.style.display = "none";
 });
-let y=  document.getElementById('alert');
-let x=  document.getElementById('link');
-let w=  document.getElementById('alert1');
-let z=  document.getElementById('link1');
-let w1=  document.getElementById('alert2');
-let z1=  document.getElementById('link2');
-function f(x){
-   y.style.display="block";
+let y=  document.getElementById('alertForRes');
+let x=  document.getElementById('linkForRes');
+/** */
+let w=  document.getElementById('alertForClGit');
+let z=  document.getElementById('linkForClGit');
+/** */
+let w1=  document.getElementById('alertForClWeb');
+let z1=  document.getElementById('linkForClWeb');
+/** */
+let kk=  document.getElementById('alertForDDWeb');
+let ww=  document.getElementById('linkForDDWeb');
+/** */
+let kk2=  document.getElementById('alertForDDGit');
+let ww2=  document.getElementById('linkForDDGit');
+
+function mouseForWDD(ww){
+  kk.style.display="block";
 }
-function f2(x){
-  y.style.display="none";
+function leaveForWDD(ww){
+  kk.style.display="none";
+}
+
+function mouseForDD(ww2){
+  kk2.style.display="block";
+}
+function leaveForDD(ww2){
+  kk2.style.display="none";
+}
+
+
+function mouseForRes(x){
+  document.getElementById('alertForRes').style.display="block";
+}
+function leaveForRes(x){
+  document.getElementById('alertForRes').style.display="none";
 }
 
 function f1(z){
