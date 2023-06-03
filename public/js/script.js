@@ -1,7 +1,7 @@
-var loader=document.getElementById("preloader");
+/* var loader=document.getElementById("preloader");
 window.addEventListener("load",function(){
     loader.style.display = "none";
-});
+}); */
 window.onload=function(){
   var hi=document.getElementById("hi");
   var des=document.getElementById("des");
