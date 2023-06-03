@@ -38,7 +38,8 @@
             width: 25px;
         }
     .myCV a {
-        font-size: 0.5rem;
+        padding:5px;
+        font-size: 0.32rem;
     }
     .myCV a:hover {
         font-size: 0.6rem;
@@ -55,6 +56,12 @@
         
         
      }
+     .knowledge{
+        height: 180px;
+    }
+     .knowledgeDiv1 img , .knowledgeDiv2 img{
+        height: 35px;
+     }
     
    .work-div1 , .work-div2{
 
@@ -67,14 +74,14 @@
  }
 }
 
-@media(min-width:550px) and (max-width:850px){
+@media(min-width:550px) and (max-width:700px){
     .start p , .about_me span , .about_me p ,
     .interests span , .interests p, .knowledge span  , .work span , .contact span ,.email-form span
     , .contact p {
     font-size: 1.3rem;
     }
     .myCV a {
-        font-size: 0.7rem;
+        font-size: 0.55rem;
         margin: 0;
     }
     .myCV a:hover {
@@ -119,11 +126,16 @@
                     height:30px;
                     width: 30px;
                 }
-              
+                .knowledge{
+                    height: 250px;
+                }
+                 .knowledgeDiv1 img , .knowledgeDiv2 img{
+                    height: 45px;
+                 }
           
     } 
  
-    @media(min-width:850px) and (max-width:900px){
+    @media(min-width:700px) and (max-width:900px){
         .work-des {
             display: grid;
             grid-template-rows:0.01fr 0.2fr 1fr 1fr;
@@ -170,6 +182,12 @@
                             font-size: 1rem;
                             margin: 0;
                         }
+                        .knowledge{
+                            height: 300px;
+                        }
+                         .knowledgeDiv1 img , .knowledgeDiv2 img{
+                            height: 75px;
+                         }
                     } 
 
     

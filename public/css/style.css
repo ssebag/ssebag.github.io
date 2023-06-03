@@ -54,14 +54,19 @@ body{
     justify-self:center;
 }
 
-
+#hi ,#des{
+    position: relative;
+    left:30px
+}
+#buttonCv{
+    position: relative;
+    top:10px;
+}
  .start{
    display:grid;
    grid-template-columns:2fr 0.5fr;
  }
- .begnning {
-    justify-self: start;
- }
+
  .begnning p ,.about_me span , .interests span , .skills span ,.work span ,
  .contact span ,.knowledge span , .email-sending span{
     text-align: start;
@@ -73,7 +78,7 @@ body{
  .work span:hover ,.contact span:hover ,.knowledge span:hover, .email-sending span:hover{
     text-shadow: 0 -1px 4px #FFF, 0 -2px 1px rgb(201, 195, 195), 0 10px 10px #251a8d, 0 -18px 40px rgb(73, 101, 163), -18px 2px 3px rgba(206,89,55,0.01);
  }
- .begnning p .span1:hover,.begnning p .span2:hover{
+ .begnning p .span1,.begnning p .span2:hover{
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #5900ff, 0 -18px 40px rgb(0, 68, 255), -18px 2px 3px rgba(206,89,55,0.01);
  }
  .begnning p .span2{
@@ -82,8 +87,9 @@ body{
 
  .myCV{
     justify-self: end;
-   
+    
  }
+
 .main-nav{
   justify-content: start;
   align-content: flex-end;
@@ -328,3 +334,30 @@ nav{
     border-bottom: 3px solid #696497;
     
 }
+.knowledge{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.knowledgeDiv1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+.knowledgeDiv2{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.knowledgeDiv1 img ,.knowledgeDiv2 img{
+    height: 100px;
+}
+#alert{
+    display: none;
+}
+
+
+

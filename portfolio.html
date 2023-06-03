@@ -72,11 +72,11 @@
    
     <div class="start">
       <div class="begnning"> 
-        <p>Hi,</p>
-        <p>I'm <span class="span1">Seba Ghneem</span>,<br> <span class="span2">Software Developer</span></p>
+        <p id="hi">Hi,</p>
+        <p id="des">I'm <span class="span1">Seba Ghneem</span>,<br> <span class="span2">Software Developer</span></p>
       </div>
 
-      <div class="myCV"> <a class="btn buttonCv" href="public/Seba Gh CV.pdf">Download my CV</a></div>
+      <div class="myCV"> <a class="btn buttonCv" id="buttonCv" href="public/Seba Ghneem CV.pdf">Download my CV</a></div>
  
     </div>
    </div>
@@ -99,88 +99,35 @@
       <p><span class="iconify mx-2" data-icon="noto:woman-running-light-skin-tone" data-flip="horizontal"> </span>Walking</p>
       <p><span class="iconify mx-2" data-icon="noto:laptop-computer"></span> Programming</p>
       
-      <p><span class="iconify mx-2" data-icon="vscode-icons:file-type-photoshop"></span> PhotoShop</p>
-      
+      <p><span class="iconify mx-2" data-icon="vscode-icons:file-type-photoshop"></span> PhotoShop</p>    
     </div>
-    
     <div class=" row knowledge" id="knowledge">
      <span>My Knowledge</span>
-     <div>
+     <div class="knowledgeDiv1" style="position: relative;">
+      <div class="alert alert-info" role="alert" id="alert">
+       
+      </div>
+      <img id="c & c++" onmouseover="toHover('c & c++')"  onmouseleave="toDisVisible(this)" class="c+c++" src="public/image/knowledge/c+c++.png" alt="">
+      <img id="Html" onmouseover="toHover('Html')" onmouseleave="toDisVisible(this)" class="html" src="public/image/knowledge/html.png" alt="">
+      <img id="Css" onmouseover="toHover('Css')" onmouseleave="toDisVisible(this)" class="css" src="public/image/knowledge/css.png" alt="">
+      <img id="Js" onmouseover="toHover('Js')" onmouseleave="toDisVisible(this)" class="js" src="public/image/knowledge/js.png" alt="">
+      <img id="Dart" onmouseover="toHover('Dart')" onmouseleave="toDisVisible(this)" class="dart" src="public/image/knowledge/dart.png" alt="">
+      <img id="Php"  onmouseover="toHover('Php')" onmouseleave="toDisVisible(this)" class="php" src="public/image/knowledge/php.png" alt="">
+      <img id="Java" onmouseover="toHover('Java')" onmouseleave="toDisVisible(this)" class="java"  src="public/image/knowledge/java.png" alt="">
+      
+     </div> 
+     <div class="knowledgeDiv2">
+      <img id="Bootstrap" onmouseover="toHover('Bootstrap')" onmouseleave="toDisVisible(this)" class="bootstrap" src="public/image/knowledge/bootstrap.png" alt="">
+      <img id="Laravel" onmouseover="toHover('Laravel')"  onmouseleave="toDisVisible(this)" class="laravel" src="public/image/knowledge/laravel.png" alt="">
+      <img id="Sql" onmouseover="toHover('Sql')" onmouseleave="toDisVisible(this)" class="sql" src="public/image/knowledge/sql.png" alt="">
+      <img id="Mysql" onmouseover="toHover('Mysql')"  onmouseleave="toDisVisible(this)" class="mysql" src="public/image/knowledge/msql.png" alt="">
      
-      <div class="knowledge-div">
-        <span>Html</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background: #4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>Css</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>JavaScript</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 70%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>Php</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>Dart</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>C</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>C++</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-  <div class="knowledge-div">
-        <span>Java</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-  <div class="knowledge-div">
-        <span>Laravel</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 70%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>Flutter</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 55%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>Bootstrap</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 85%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr>
-      <div class="knowledge-div">
-        <span>Sql & MySql</span>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 90%; background:#4E61BA;" ></div>
-          </div>
-      </div><hr> 
+      
+
+     </div> 
+
+
      </div>
-    </div>
     
     <div class=" row work" id="work">
      <span>My Work</span>
@@ -326,7 +273,6 @@
            
           </div>
         </div>
-        
         <div class="work-des my-4">
            <h2>Doctors Center</h2>
            <i class="mx-3">Date: 2022</i>
@@ -347,15 +293,85 @@
           
           </div>
         </div>
-       </div>
+      </div>
+      <div class="work-div2">    
+        <div class="work-des my-4">
+          <h2>School website</h2>
+          <i class="mx-3">Date: 2023</i>
+          <p>This website is designed for a private school, It has details about this school, It is intended for three type of users: The admin,
+             who can add teachers and students, approve new test, and view student marks. The teacher, who can add permanent test
+            and view their students' marks. And the student, who can test themselves by taking these tests and also use them as a reference.
+             In this project, I practiced using Livewire, Middleware, and Notification. 
+          </p>
+          <!-- <div class="work-icon2">
+            <a class="github" href="https://github.com/ssebag/clothes_store.git" target="_blank" id="linkForClGit" onmouseover="f1(this)" onmouseleave="f3(this)"><i class="fa fa-3x fa-github"></i></a>
+            <div class="alert alert-info" role="alert" id="alertForClGit">
+              For Github!
+            </div>
+            <a  class="diamond my-1" href="https://clothes-store123.000webhostapp.com" target="_blank" id="linkForClWeb" onmouseover="f11(this)" onmouseleave="f33(this)">
+              <i class="fa fa fa-diamond "></i></a>
+            <div class="alert alert-info" role="alert" id="alertForClWeb">
+              For Webhost!
+            </div>
+          
+          </div> -->
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="public/image/private_school/1.PNG" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/2.PNG" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/3.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/4.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/5.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/6.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/7.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/8.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/9.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/10.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/11.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/12.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/13.PNG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/image/private_school/14.PNG" alt="Third slide">
+            </div>
+          </div>
+        </div>
+      </div>
  
     
     </div>
     
+    
     <div class=" row contact" id="contact">
      <span>My Contacts</span>
      <div class="contact-div">
-      <p> <span class="iconify phone" data-icon="emojione:mobile-phone" ></span> Phone : 0932531446</p>
+      <p> <span class="iconify phone" data-icon="emojione:mobile-phone" ></span> Phone : 0963932531446</p>
       <p><span class="iconify email mx-1" data-icon="logos:google-gmail"></span> Email : s.sseba96@gmail.com</p>
       <p><span class="iconify facebook mx-1" data-icon="logos:facebook"></span> Facebook : www.facebook.com/sseba.gh</p>
      </div>
