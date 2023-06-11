@@ -1,9 +1,5 @@
 body{
-    /* background:url("https://gifimage.net/wp-content/uploads/2017/06/stars-gif-4.gif"); */
-/* background: url("https://i.pinimg.com/originals/a7/7f/62/a77f6215e2f77eb5a6e4e77d7298809d.gif"); */
     background: url("../image/background.webp") 0 0 repeat;
-  
-
  }
  .container{
     padding-bottom: 2rem;
@@ -16,13 +12,22 @@ body{
     margin-top:-2%;
  }
  .main-row ul{
-    background-image:url("../image/bkg2.gif");
     border-radius: 2%;
     padding: 10px;
+   position: relative;
+    z-index: 2;
+ }
+ ul::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    width:calc(100% - 300px);
+    bottom: 16px;
+    left:150px;
  }
  .buttonCv
 {
-  background-image:url("../image/bkg2.gif");
     color:white;
     border: 5px solid rgb(15, 15, 92);
 }
@@ -113,9 +118,8 @@ nav{
 } 
 .main-nav ul li a:hover{
     color: white;
-    font-size: 1.7rem;
     font-weight: bolder;
-    
+    border-bottom: 3px solid #19c8fa;    
 } 
 .about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge ,.email-sending{
     margin-top: 3rem;
