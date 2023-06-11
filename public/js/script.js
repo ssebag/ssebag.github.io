@@ -32,22 +32,22 @@ function(){
  function work_div1(){
   var div1=document.getElementById("work-div1");
   var animation=div1.animate([
-    {left:"-1200px"},{left:"30px",offset:0.5},{left:"30px",offset:0.5}],{duration:2000,easing:"ease-in"});
+    {left:"-1200px"},{left:"5px",offset:0.5},{left:"5px",offset:0.5}],{duration:2000,easing:"ease-in"});
 }
 function work_div2(){
   var div2=document.getElementById("work-div2");
   var animation=div2.animate([
-      {left:"1200px"},{left:"30px",offset:0.5},{left:"30px",offset:0.5}],{duration:2000,easing:"ease-in"});
+      {left:"1200px"},{left:"5px",offset:0.5},{left:"5px",offset:0.5}],{duration:2000,easing:"ease-in"});
 }
 function work_div3(){
   var div3=document.getElementById("work-div3");
   var animation=div3.animate([
-      {left:"-1200px"},{left:"30px",offset:0.5},{left:"30px",offset:0.5}],{duration:2000,easing:"ease-in"});
+      {left:"-1200px"},{left:"5px",offset:0.5},{left:"5px",offset:0.5}],{duration:2000,easing:"ease-in"});
 } 
 function work_div4(){
   var div4=document.getElementById("work-div4");
   var animation=div4.animate([
-      {left:"1200px"},{left:"30px",offset:0.5},{left:"30px",offset:0.5}],{duration:2000,easing:"ease-in"});
+      {left:"1200px"},{left:"5px",offset:0.5},{left:"5px",offset:0.5}],{duration:2000,easing:"ease-in"});
 } 
 
   window.addEventListener('scroll',
