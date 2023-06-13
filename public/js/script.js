@@ -135,21 +135,3 @@ function f1(z){
  function f33(z1){
    w1.style.display="none";
  }
-/* for knowledge alert */
-
- var alert=document.getElementById('alert');
- function toHover(elem){
-  rect=document.getElementById(elem).getBoundingClientRect();
-  x=rect.x - 20;
-  y=rect.y-320;
-  console.log(x);
-  alert.innerHTML = "<div>"+elem+"</div>"
-  alert.style.position='absolute';
-  alert.style.left=x+'px';
-  alert.style.top=y+'px';
-  alert.style.display="block";
- }
- function toDisVisible(){
-  alert.style.display='none';
- }
- /** end knowledge alert */
