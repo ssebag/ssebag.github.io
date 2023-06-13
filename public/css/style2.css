@@ -13,7 +13,10 @@
     padding-right: 15px;
    
 }
-
+.main-row{
+    display: flex;
+    justify-content: start;
+ }
     .start p , .about_me span , .about_me p ,
     .interests span , .interests p, .knowledge span  , .work span , .contact span ,.email-form span
     {
@@ -45,8 +48,9 @@
         font-size: 0.32rem;
     }
     .myCV a:hover {
-        font-size: 0.6rem;
         margin: 0;
+        font-weight: 600;
+
     }
     .work-des{
      display: none;
@@ -75,9 +79,15 @@
    .work-div1 img, .work-div2 img{
     height: 8rem;
  }
-}
 
-@media(min-width:550px) and (max-width:700px){
+ 
+}
+ 
+@media(min-width:551px) and (max-width:750px){    
+.about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge ,.email-sending{
+    margin-top: 2rem;
+    padding:1rem 2rem;       
+}
     #work-div1,#work-div2,#work-div3,#work-div4{
         left: 5px;
     }
@@ -86,22 +96,35 @@
     , .contact p {
     font-size: 1.3rem;
     }
+    .contact p {
+        font-size: 1rem;
+        }
     .myCV a {
         font-size: 0.55rem;
         margin: 0;
     }
     .myCV a:hover {
-        font-size: 0.8rem;
-        margin: 0;
+        font-weight: 800;
     }
     .knowledge-div span{
         font-size: 1rem;
       
     }
+    .main-nav ul li a{
+        font-size: 13px;
+    }
+    .main-nav ul li{
+        width: max-content;
+    }
+    ul::after{
+        width: 70%;
+        bottom: 16px;
+        left: 30px;
+    }
+
   
    
      .port-image img{
-      
         width:5rem;
         height:8rem;     
      }
@@ -113,7 +136,9 @@
        display: none;
      }
      .work-div1 img, .work-div2 img{
-        height: 16rem;    }
+        height: 12rem; 
+       
+       }
         .work-des h2 {
             font-size: 0.8rem;
             }
@@ -121,8 +146,8 @@
                 font-size: 0.6rem;
                 }
                 .phone{
-                    height: 50px;
-                    width: 40px;
+                    height: 40px;
+                    width: 30px;
                 }
                 .email{
                     height:25px;
@@ -138,24 +163,47 @@
                  .knowledgeDiv1 img , .knowledgeDiv2 img{
                     height: 45px;
                  }
+                 .main-row{
+                    display: flex;
+                    justify-content: start;
+                 }
           
     } 
- 
-    @media(min-width:700px) and (max-width:900px){
+  
+    @media(min-width:751px) and (max-width:1050px){
+      
+            .start p , .about_me span , .about_me p ,
+            .interests span , .interests p, .knowledge span  , .work span , .contact span ,.email-form span
+            , .contact p {
+            font-size: 1.7rem;
+            }
+           .about_me p ,.interests p {
+            font-size: 1.3rem;
+            }
+            .contact p {
+                font-size: 0.8rem;
+              }
+        
+        .about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge ,.email-sending{
+            margin-top: 2rem;
+            padding:1rem 2rem;       
+        }
         #work-div1,#work-div2,#work-div3,#work-div4{
             left: 5px;
+            height: 20rem;
         }
         .work-des {
-            display: grid;
-            grid-template-rows:0.01fr 0.2fr 1fr 1fr;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
         }
            .work-div1 img, .work-div2 img{
-            height: 20rem;    }
+            height: 15rem;    }
             .work-des h2 {
                 font-size: 1rem;
                 }
                 .work-des p , .work-des i{
-                    font-size: 0.8rem;
+                    font-size: 0.7rem;
                     }
                     .work-des i{
                         font-size: 0.6rem;
@@ -188,15 +236,33 @@
                             font-size: 0.8rem;
                           }
                         .myCV a:hover {
-                            font-size: 1rem;
-                            margin: 0;
+                            font-weight: 1000;
                         }
                         .knowledge{
                             height: 300px;
                         }
                          .knowledgeDiv1 img , .knowledgeDiv2 img{
-                            height: 75px;
+                            height: 65px;
                          }
+                         .main-row{
+                            display: flex;
+                            justify-content: space-between;
+                         }
+                         .main-nav ul li a{
+                            font-size: 20px;
+                         }
+                         ul li{
+                            width: max-content;
+                         }
+                         ul::after{
+                            width: 75%;
+                            bottom: 16px;
+                            left: 39px;
+                        }
+                        .port-image img{
+                            width: 6rem;
+                            height: 10rem;
+                        }
                     } 
 
     

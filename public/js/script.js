@@ -7,12 +7,14 @@ function f(){
   var hi=document.getElementById("hi");
   var des=document.getElementById("des");
   var myCV=document.getElementById("buttonCv");
+  hi.style.visibility="visible";
+  des.style.visibility="visible";
   var animation=hi.animate([
     {left:"-150px"},{left:"30px",offset:0.5},{left:"30px",offset:0.5}],{duration:2000,easing:"ease-in"});
     var animation=des.animate([
-      {left:"1300px"},{left:"30px",offset:0.5},{left:"30px",offset:0.5}],{duration:10000,easing:"ease-out"});
+      {left:"400px"},{left:"30px",offset:0.5},{left:"30px",offset:0.5}],{duration:4000,easing:"ease-out"});
       var animation=myCV.animate([
-      {top:"-1000px"},{top:"10px",offset:0.5},{top:"10px",offset:1}],{duration:10000,easing:"ease-out"});
+      {top:"-1000px"},{top:"10px",offset:0.5},{top:"10px",offset:1}],{duration:5000,easing:"ease-out"});
       }
 window.addEventListener('DOMContentLoaded',f);
 /* setInterval(f,7000); */
@@ -139,7 +141,7 @@ function f1(z){
  function toHover(elem){
   rect=document.getElementById(elem).getBoundingClientRect();
   x=rect.x - 20;
-  y=rect.y-240;
+  y=rect.y-320;
   console.log(x);
   alert.innerHTML = "<div>"+elem+"</div>"
   alert.style.position='absolute';

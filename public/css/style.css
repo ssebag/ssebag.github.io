@@ -1,20 +1,22 @@
+:root{
+    --title-color:rgb(44, 1, 44);
+    --background-color:rgba(63, 16, 63, 0.644);
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body{
-    background: url("../image/background.webp") 0 0 repeat;
+    background-color: var(--background-color);
  }
  .container{
     padding-bottom: 2rem;
  }
  .main-row{
-   
     opacity:90%;
-    display:grid;
-    grid-template-columns: 0.2fr 2fr;
-    margin-top:-2%;
+    display: flex;
+    justify-content: space-evenly;
  }
  .main-row ul{
     border-radius: 2%;
@@ -26,21 +28,26 @@ body{
     content: "";
     position: absolute;
     height: 1px;
-    background-color: white;
-    width:calc(100% - 300px);
+    background-color: var(--title-color);
+    width:calc(100% - 50px);
     bottom: 16px;
-    left:150px;
+    left:-90px;
  }
  .buttonCv
 {
     color:white;
-    border: 5px solid rgb(15, 15, 92);
+    border: 5px solid var(--title-color);
+    background-color: var(--title-color);
+    transition: 0.35s;
 }
 .buttonCv:hover
 {
-    font-size: large;   
+
+    font-weight: 1000;   
     color: white;
-    border: 8px solid rgb(15, 15, 92);
+    border: 5px solid var(--title-color);
+    background-color: var(--title-color);
+    transform: rotate(-3deg) scale(1.1);  
 }
  .port-image {
     width:7.4rem;
@@ -66,7 +73,8 @@ body{
 
 #hi ,#des{
     position: relative;
-    left:30px
+    left:30px;
+    visibility: hidden;
 }
 #work-div1,#work-div2,#work-div3,#work-div4{
     position:relative;
@@ -77,8 +85,8 @@ body{
     top:10px;
 }
  .start{
-   display:grid;
-   grid-template-columns:2fr 0.5fr;
+   display: flex;
+   justify-content: space-between;
  }
 
  .begnning p ,.about_me span , .interests span , .skills span ,.work span ,
@@ -120,30 +128,45 @@ nav{
     font-size: 1.5rem;
     font-weight: bolder;
     margin-left: 0.5rem;
+    position: relative;
+    z-index: 2;
 } 
 .main-nav ul li a:hover{
-    color: white;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #5900ff, 0 -18px 40px rgb(0, 68, 255), -18px 2px 3px rgba(206,89,55,0.01);
+   
     font-weight: bolder;
-    border-bottom: 3px solid #19c8fa;    
+    border-bottom: 3px solid var(--title-color);;    
 } 
 .about_me, .interests , .skills  ,.work  ,.contact  ,.knowledge ,.email-sending{
     margin-top: 3rem;
-    
-     background:#091538; 
-    /*background: url("https://thumbs.gfycat.com/SilentIdleAmurstarfish-size_restricted.gif");*/
+    background-image: url('../image/div-background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding:1rem 5rem;
-        
+    padding:1rem 5rem;    
+    position: relative;   
 }
+.about_me::before, .interests::before, .skills::before,
+.knowledge::before, .work::before, .contact::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+  }
 .contact{
     margin-bottom: 3rem;
+    
 }
 .about_me span, .interests span, .skills span ,.work span ,.contact span ,.knowledge span ,.email-sending span{
-    color: grey;
+    z-index: 2;
+    color:var(--title-color);
+   
 }
 
 .about_me p , .interests p , .begnning{
+    z-index: 2;
     margin-top:0.5rem;
     text-align: start;
     font-size: 2.5rem;
@@ -152,11 +175,11 @@ nav{
     font-family:'Times New Roman', Times, serif;
     
 }
-.knowledge-div{
-    display: grid;
-    grid-template-columns: 0.5fr 3fr;
+.contact-div{
+     z-index: 2;
 }
-.knowledge-div span, .contact-div p{
+ .contact-div p{
+   
     font-size: 1.5rem;
     color: white;
 }
@@ -184,24 +207,33 @@ nav{
         width:0;
     }
 }
-.work-div1{
-    margin: 1rem;
+.work-div1{  
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
+    margin-bottom: 1rem;
     
 }
+.work{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-nav ul li{
+    width: max-content;
+}
 .work-div2{
-    margin: 1rem;
+   
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 .work-div1 img, .work-div2 img{
     border: rgb(137, 105, 211) 1px solid;
     border-radius: 2%;
     height: 25rem;
- 
 }
 
 .work-des{
@@ -354,22 +386,32 @@ nav{
     justify-content: space-between;
 }
 .knowledgeDiv1{
+    z-index:2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   
 }
 .knowledgeDiv2{
-    
+    z-index:2;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 .knowledgeDiv1 img ,.knowledgeDiv2 img{
     height: 100px;
+    transition: 0.3s;
+}
+.knowledgeDiv1 img:hover{
+    transform: rotate(3deg) scale(1.1);
+}
+
+.knowledgeDiv2 img:hover{
+    transform: rotate(-3deg) scale(1.1);
 }
 #alert{
     display: none;
+    z-index:2;
 }
 
 
