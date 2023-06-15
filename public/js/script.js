@@ -51,6 +51,11 @@ function work_div4(){
   var animation=div4.animate([
       {left:"1200px"},{left:"5px",offset:0.5},{left:"5px",offset:0.5}],{duration:2000,easing:"ease-in"});
 } 
+function work_div5(){
+  var div5=document.getElementById("work-div5");
+  var animation=div5.animate([
+      {left:"1200px"},{left:"5px",offset:0.5},{left:"5px",offset:0.5}],{duration:2000,easing:"ease-in"});
+} 
 
   window.addEventListener('scroll',
 function(){
@@ -84,6 +89,15 @@ function(){
       work_div4();
       window.removeEventListener('scroll',arguments.callee);
     }});
+    window.addEventListener('scroll',
+    function(){
+     var element=document.getElementById("work-div5");
+      var position=element.getBoundingClientRect();
+      if(position.top <= window.innerHeight && position.bottom >=0){
+        work_div5();
+        window.removeEventListener('scroll',arguments.callee);
+      }});
+  
 /* end function for move work div */
 
 let y=  document.getElementById('alertForRes');
