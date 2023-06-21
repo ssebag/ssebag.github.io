@@ -20,7 +20,17 @@
 <body>
  
    <!--  <div id="preloader"></div> -->
-  
+   <!-- for alert -->
+   <div class="alert alert-info" role="alert" id="alertGit" for="linkGit">
+    For Github!
+  </div>
+  <div class="alert alert-info" role="alert" id="alertWeb" for="linkWeb">
+    For Webhost!
+  </div> 
+  <div class="alert alert-info" role="alert" id="alertKnowledge">
+   
+  </div> 
+  <!-- end alert -->
   <div class="container-fluid">
     <div class="main-row">
       <div class="port-image">
@@ -91,25 +101,25 @@
       <p><span class="iconify mx-2" data-icon="vscode-icons:file-type-photoshop"></span> PhotoShop</p>    
     </div>
     <div class=" row knowledge" id="knowledge">
-     <span>My Knowledge</span>
+     <span id="eee">My Knowledge</span>
      <div class="knowledgeDiv1" style="position: relative;">
       <div class="alert alert-info" role="alert" id="alert">
        
       </div>
-      <img id="c & c++" onmouseover="toHover('c & c++')"  onmouseleave="toDisVisible(this)" class="c+c++" src="public/image/knowledge/c+c++.png" alt="">
-      <img id="Html" onmouseover="toHover('Html')" onmouseleave="toDisVisible(this)" class="html" src="public/image/knowledge/html.png" alt="">
-      <img id="Css" onmouseover="toHover('Css')" onmouseleave="toDisVisible(this)" class="css" src="public/image/knowledge/css.png" alt="">
-      <img id="Js" onmouseover="toHover('Js')" onmouseleave="toDisVisible(this)" class="js" src="public/image/knowledge/js.png" alt="">
-      <img id="Dart" onmouseover="toHover('Dart')" onmouseleave="toDisVisible(this)" class="dart" src="public/image/knowledge/dart.png" alt="">
-      <img id="Php"  onmouseover="toHover('Php')" onmouseleave="toDisVisible(this)" class="php" src="public/image/knowledge/php.png" alt="">
-      <img id="Java" onmouseover="toHover('Java')" onmouseleave="toDisVisible(this)" class="java"  src="public/image/knowledge/java.png" alt="">
+      <img id="c & c++" onmouseover="m(this)"  onmouseleave="leave(this)" class="c+c++" src="public/image/knowledge/c+c++.png" alt="">
+      <img id="Html" onmouseover="m(this)" onmouseleave="leave(this)" class="html" src="public/image/knowledge/html.png" alt="">
+      <img id="Css" onmouseover="m(this)" onmouseleave="leave(this)" class="css" src="public/image/knowledge/css.png" alt="">
+      <img id="Js" onmouseover="m(this)" onmouseleave="leave(this)" class="js" src="public/image/knowledge/js.png" alt="">
+      <img id="Dart" onmouseover="m(this)" onmouseleave="leave(this)" class="dart" src="public/image/knowledge/dart.png" alt="">
+      <img id="Php"  onmouseover="m(this)" onmouseleave="leave(this)" class="php" src="public/image/knowledge/php.png" alt="">
+      <img id="Java" onmouseover="m(this)" onmouseleave="leave(this)" class="java"  src="public/image/knowledge/java.png" alt="">
       
      </div> 
      <div class="knowledgeDiv2">
-      <img id="Bootstrap" onmouseover="toHover('Bootstrap')" onmouseleave="toDisVisible(this)" class="bootstrap" src="public/image/knowledge/bootstrap.png" alt="">
-      <img id="Laravel" onmouseover="toHover('Laravel')"  onmouseleave="toDisVisible(this)" class="laravel" src="public/image/knowledge/laravel.png" alt="">
-      <img id="Sql" onmouseover="toHover('Sql')" onmouseleave="toDisVisible(this)" class="sql" src="public/image/knowledge/sql.png" alt="">
-      <img id="Mysql" onmouseover="toHover('Mysql')"  onmouseleave="toDisVisible(this)" class="mysql" src="public/image/knowledge/msql.png" alt="">
+      <img id="Bootstrap" onmouseover="m(this)"  onmouseleave="leave(this)" class="bootstrap" src="public/image/knowledge/bootstrap.png" alt="">
+      <img id="Laravel" onmouseover="m(this)"   onmouseleave="leave(this)" class="laravel" src="public/image/knowledge/laravel.png" alt="">
+      <img id="Sql" onmouseover="m(this)"  onmouseleave="leave(this)" class="sql" src="public/image/knowledge/sql.png" alt="">
+      <img id="Mysql" onmouseover="m(this)"   onmouseleave="leave(this)" class="mysql" src="public/image/knowledge/msql.png" alt="">
      
       
 
@@ -117,20 +127,19 @@
 
 
      </div>
-    <div class=" row work" id="work">
-     <span>My Work</span>
+    <div class="row work" id="work">
+    
+     <span id="ee">My Work</span>
      <div class="work-div2" id="work-div5"> 
       <div class="work-des ">
         <h2>My First Website</h2>
         <i class="mx-3">Date: 2021</i>
-        <p>This is my first training website for HTML and CSS only, without using Bootstrap, and I used the Kasper PSD from GhRAPHBERRY website. 
+        <p>This is my first training website for HTML and CSS only, without using Bootstrap, and I used the Kasper PSD from GHRAPHBERRY website. 
         </p>
-        <div class="work-icon1">
-          <a class="github" href="https://github.com/ssebag/zero_website_design" target="_blank" id="linkForRes" onmouseover="mouseForRes(this)" onmouseleave="leaveForRes(this)"><i class="fa fa-3x fa-github"></i></a>
-          <div class="alert alert-info" role="alert" id="alertForRes">
-            For Github!
-          </div>
-          
+        <div class="div-work-icon">
+          <div class="work-icon">
+            <a class="github" href="https://github.com/ssebag/zero_website_design" target="_blank" id="linkGit" onmouseover="m(this)" onmouseleave="leave(this)"><i class="fa fa-3x fa-github"></i></a>
+          </div>         
         
         </div>
      </div>
@@ -141,15 +150,14 @@
       <div class="work-des ">
          <h2>Restaurant Website</h2>
          <i class="mx-3">Date: 2021</i>
-         <p>A simple design I made for training purposes using HTML, CSS, JS and Bootstrap i learned a lot while coding this website. 
+         <p>A simple design I made for training purposes using HTML, CSS, JS and Bootstrap I learned a lot while coding this website. 
           This project is a restaurant website, through this website you can know the dishes available in this restaurant and know the offers. 
           In addition you can ordering easily. 
          </p>
-         <div class="work-icon1">
-           <a class="github" href="https://github.com/ssebag/Task1-restaurant.git" target="_blank" id="linkForRes" onmouseover="mouseForRes(this)" onmouseleave="leaveForRes(this)"><i class="fa fa-3x fa-github"></i></a>
-           <div class="alert alert-info" role="alert" id="alertForRes">
-             For Github!
-           </div>        
+         <div class="div-work-icon">
+           <div class="work-icon">
+            <a class="github" href="https://github.com/ssebag/Task1-restaurant.git" target="_blank" id="linkGit" onmouseover="m(this)" onmouseleave="leave(this)"><i class="fa fa-3x fa-github"></i></a>
+          </div>
          </div>
       </div>
      </div>
@@ -160,18 +168,14 @@
           <p>This website is a clothing store that helps in shopping clothes and enables the customer to know all the
               details of the product and buy it if he wants.
               Also, the store owner was able to add a product, modify it, and know the sales invoices and other details of the store...... </p>
-          <div class="work-icon2">
-            <a class="github" href="https://github.com/ssebag/clothes_store.git" target="_blank" id="linkForClGit" onmouseover="f1(this)" onmouseleave="f3(this)"><i class="fa fa-3x fa-github"></i></a>
-            <div class="alert alert-info" role="alert" id="alertForClGit">
-              For Github!
-            </div>
-            <a  class="diamond my-1" href="https://clothes-store123.000webhostapp.com" target="_blank" id="linkForClWeb" onmouseover="f11(this)" onmouseleave="f33(this)">
-              <i class="fa fa fa-diamond "></i></a>
-            <div class="alert alert-info" role="alert" id="alertForClWeb">
-              For Webhost!
-            </div>
+              <div class="div-work-icon">
+                <div class="work-icon">
+                 <a class="github" href="https://github.com/ssebag/clothes_store.git" target="_blank" id="linkGit" onmouseover="m(this)" onmouseleave="leave(this)"><i class="fa fa-3x fa-github"></i></a>
+                 <a  class="diamond my-1" href="https://clothes-store123.000webhostapp.com" target="_blank" id="linkWeb" onmouseover="m(this)" onmouseleave="leave(this)">
+                  <i class="fa fa fa-diamond "></i></a>
+                </div>            
+              </div>
           
-          </div>
         </div>
         <img class="d-block w-100" src="public/image/cl-store/cl-store4.PNG" alt="First slide">
     
@@ -182,15 +186,14 @@
         <div class="work-des ">
            <h2>Doctors Center</h2>
            <i class="mx-3">Date: 2022</i>
-           <p>On This site I have tried many things eg: SoftDelete, Validation, Relations, Middleware, Seeder, Tinker, Factory, Mail with Mailgun and Markdown, 
+           <p>On this site I have tried many things eg: SoftDelete, Validation, Relations, Middleware, Seeder, Tinker, Factory, Mail with Mailgun and Markdown, 
             Notification, Trait, File Storage.....
   
            </p>
-           <div class="work-icon1">
-            <a class="github" href="https://github.com/ssebag/doctor_date.git" target="_blank" id="linkForDDGit" onmouseover="mouseForDD(this)" onmouseleave="leaveForDD(this)"><i class="fa fa-3x fa-github"></i></a>
-            <div class="alert alert-info" role="alert" id="alertForDDGit">
-              For Github!
-            </div>          
+           <div class="div-work-icon">
+            <div class="work-icon">
+             <a class="github" href="https://github.com/ssebag/doctor_date.git" target="_blank" id="linkGit" onmouseover="m(this)" onmouseleave="leave(this)"><i class="fa fa-3x fa-github"></i></a>
+           </div>
           </div>
         </div>
       </div>
@@ -203,18 +206,6 @@
             and view their students' marks. And the student, who can test themselves by taking these tests and also use them as a reference.
              In this project, I practiced using Livewire, Middleware, and Notification. 
           </p>
-          <!-- <div class="work-icon2">
-            <a class="github" href="https://github.com/ssebag/clothes_store.git" target="_blank" id="linkForClGit" onmouseover="f1(this)" onmouseleave="f3(this)"><i class="fa fa-3x fa-github"></i></a>
-            <div class="alert alert-info" role="alert" id="alertForClGit">
-              For Github!
-            </div>
-            <a  class="diamond my-1" href="https://clothes-store123.000webhostapp.com" target="_blank" id="linkForClWeb" onmouseover="f11(this)" onmouseleave="f33(this)">
-              <i class="fa fa fa-diamond "></i></a>
-            <div class="alert alert-info" role="alert" id="alertForClWeb">
-              For Webhost!
-            </div>
-          
-          </div> -->
         </div>
         <img class="d-block w-100" src="public/image/private_school/5.PNG" alt="First slide">
      

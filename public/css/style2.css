@@ -1,5 +1,5 @@
 @media (max-width: 550px) {
-    #work-div1,#work-div2,#work-div3,#work-div4{
+    #work-div1,#work-div2,#work-div3,#work-div4 , #work-div5{
         left: 5px;
     }
 .about_me, .contact ,.interests ,.work, .knowledge{

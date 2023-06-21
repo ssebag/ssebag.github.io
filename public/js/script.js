@@ -99,53 +99,32 @@ function(){
       }});
   
 /* end function for move work div */
-
-let y=  document.getElementById('alertForRes');
-let x=  document.getElementById('linkForRes');
-/** */
-let w=  document.getElementById('alertForClGit');
-let z=  document.getElementById('linkForClGit');
-/** */
-let w1=  document.getElementById('alertForClWeb');
-let z1=  document.getElementById('linkForClWeb');
-/** */
-let kk=  document.getElementById('alertForDDWeb');
-let ww=  document.getElementById('linkForDDWeb');
-/** */
-let kk2=  document.getElementById('alertForDDGit');
-let ww2=  document.getElementById('linkForDDGit');
-
-function mouseForWDD(ww){
-  kk.style.display="block";
+var alertGit=document.getElementById('alertGit');
+var alertKnowledge=document.getElementById('alertKnowledge'); 
+var alertWeb=document.getElementById('alertWeb');
+function m(event){
+  var xx=event.getBoundingClientRect().x;
+  var yy=event.getBoundingClientRect().y;
+  if(event.id == "linkGit"){
+  alertGit.style.left=window.pageXOffset + xx+'px';
+  alertGit.style.top=window.pageYOffset+yy+'px';
+  alertGit.style.display="block";
+  }
+  else if(event.id == "linkWeb"){
+    alertWeb.style.left=window.pageXOffset + xx+'px';
+    alertWeb.style.top=window.pageYOffset+yy+'px';
+    alertWeb.style.display="block";
+    }
+    else  if(event.id == "c & c++" || event.id == "Html" || event.id == "Css" || event.id == "Java" || event.id == "Dart" ||event.id == "Php" || event.id == "Js" || event.id == "Bootstrap" ||event.id == "Laravel" ||event.id == "Sql" ||event.id == "Mysql"){
+      alertKnowledge.innerHTML = event.id;
+      alertKnowledge.style.left=window.pageXOffset + xx+'px';
+      alertKnowledge.style.top=window.pageYOffset+yy+'px';
+      alertKnowledge.style.display="block";
+      }
 }
-function leaveForWDD(ww){
-  kk.style.display="none";
-}
+function leave(event){
+  alertGit.style.display="none";
+  alertWeb.style.display="none";
+  alertKnowledge.style.display="none";
 
-function mouseForDD(ww2){
-  kk2.style.display="block";
 }
-function leaveForDD(ww2){
-  kk2.style.display="none";
-}
-
-
-function mouseForRes(x){
-  document.getElementById('alertForRes').style.display="block";
-}
-function leaveForRes(x){
-  document.getElementById('alertForRes').style.display="none";
-}
-
-function f1(z){
-    w.style.display="block";
- }
- function f3(z){
-   w.style.display="none";
- }
- function f11(z1){
-    w1.style.display="block";
- }
- function f33(z1){
-   w1.style.display="none";
- }
