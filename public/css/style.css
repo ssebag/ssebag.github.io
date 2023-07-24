@@ -73,8 +73,9 @@ body{
     visibility: hidden;
 }
 #work-div1,#work-div2,#work-div3,#work-div4,#work-div5{
-    position:relative;
+     position:relative;
     left: 30px;
+     
 }
 #buttonCv{
     position: relative;
